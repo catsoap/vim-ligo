@@ -1,0 +1,1 @@
+au BufRead,BufNewFile *.ligo set filetype=ligo
