@@ -2,13 +2,13 @@
 
 Vim plugin for [ligolang](https://ligolang.org/)
 
-lsp not working, but one guessed config is the following snippet of coc-config,
-while having copied the [VSCode extension](https://marketplace.visualstudio.com/items?itemName=ligolang-publish.ligo-vscode) inside a ligo-vscode dir:
+## LSP
+
+To use lsp with coc, get a `ligo-squirrel` binary from the [VSCode extension](https://marketplace.visualstudio.com/items?itemName=ligolang-publish.ligo-vscode) and add this to your `coc-settings.json`:
 
 ```json
-    "ligo": {
-      "enable": true,
-      "command": "~/.config/nvim/plugged/vim-ligo/ligo-vscode/extension/bin/Linux/bin/ligo-squirrel",
-      "filetypes": ["ligo", "mligo", "religo"]
-    }
+"ligo": {
+  "command": "~/.local/bin/ligo-squirrel",
+  "filetypes": ["ligo", "mligo", "religo"]
+}
 ```
